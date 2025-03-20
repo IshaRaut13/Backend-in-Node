@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+         background: url('/images/Sign Background.jpg') no-repeat center center fixed;
+         background-size: cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+
+
+        .social-login { 
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            width: 100%; 
+        } 
+
+        .social-login button { 
+            flex: 1; 
+            padding: 10px; 
+            gap:10px; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            white-space: nowrap; 
+        }
+
+        .google-btn {
+            background: #db4437;
+            color: white;
+        }
+        .apple-btn {
+            background: #000;
+            color: white;
+        }
+        .input-box {
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+        .icon {
+            margin: 5px;
+        }
+        input {
+            border: none;
+            background-color: lightgray;
+            outline: none;
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-link {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create an account</h2>
+        <div class="social-login">
+            <button class="google-btn"> <img src="/images/google-icon.png" alt="Google" width="20"> Google Account</button>
+            <button class="apple-btn"> <img src="/images/apple-icon.png" alt="Apple" width="20"> Apple Account</button>
+        </div>
+        <p>Or</p>
+        <form>
+            <label for="username">Username</label>
+            <div class="input-box">
+                <span class="icon">&#128100;</span>
+                <input type="text" id="username" placeholder="Enter your name" required>
+            </div>
+            
+            <label for="password">Password</label>
+            <div class="input-box">
+                <span class="icon">&#128274;</span>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Create account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</body>
+</html>

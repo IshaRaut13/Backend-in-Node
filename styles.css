@@ -1,0 +1,158 @@
+/* Apply background image for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/images/Sign Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.main-container {
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    background: #e6e6e6;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Welcome text */
+.welcome-text {
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+/* Login box - contains left and right sections */
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left section (Login form) */
+.left-section {
+    width: 50%;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+/* Right section (Social login) */
+.right-section {
+    width: 40%;
+    text-align: center;
+}
+
+/* Input fields */
+.input-container {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input-container .icon {
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    padding: 5px;
+}
+
+/* Login button */
+.login-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Social login buttons */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.google-btn {
+    background: #db4437;
+    color: white;
+}
+
+.apple-btn {
+    background: black;
+    color: white;
+}
+
+/* Signup text */
+.signup-text {
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        width: 80%;
+    }
+    .login-box {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
+
+
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ p{
+  font-size: larger; 
+  font-weight: bold; 
+}
